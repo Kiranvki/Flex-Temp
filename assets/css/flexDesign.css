@@ -1,0 +1,531 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    /* height: fit-content; */
+}
+
+.section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.section1 {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.banner {
+    background: linear-gradient(to left, rgb(1, 15, 12), rgba(3, 39, 50, 0.5), rgb(1, 15, 12)), 
+    url(../images/bird.jpg), no-repeat, center;
+    background-size: cover;
+    padding: 20px;
+    height: 600px;
+    display: block;
+    border-bottom: 50px 300px 30px 200px;
+}
+
+.banner>header {
+    padding: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+.banner>header>nav {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    align-items: center;
+
+}
+
+.banner>header>nav>img {
+    height: 56px;
+}
+
+.banner>header>nav>ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin-left: 100px;
+}
+
+.banner>header>nav>ul>li {
+    padding: 10px;
+    margin-right: 20px;
+    /* transition: 1s; */
+
+}
+
+.banner>header>nav>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+    /* font-size: 15px; */
+}
+
+.banner>header>nav>ul>li:hover {
+    background-color: rgb(247, 103, 44);
+    transform: scale(1.1);
+    border-radius: 3px;
+}
+
+.barContent {
+    display: flex;
+    flex: 5;
+    justify-content: flex-end;
+}
+
+.barContent>span>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner>header>nav>span {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 36%;
+}
+
+.banner>.template {
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    padding: 20px;
+}
+.navTwo{
+    display: none;
+}
+.display{
+    display: none;
+}
+
+
+.banner>.template>h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    word-spacing: 20px;
+}
+
+.banner>.template>h1>span {
+    color: rgb(4, 204, 237);
+    margin-left: 15px;
+}
+
+.banner>.template>.word {
+    color: #fff;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+#btn,#btn3 {
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    width: 40%;
+    background-color: rgb(247, 103, 44);
+    border: none;
+
+}
+
+#btn>a,#btn3>a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+#btn1>a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+#btn1 {
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    width: 40%;
+    border: none;
+    margin-left: 20px;
+}
+
+#btn:hover ,#btn3:hover {
+    background: #fff;
+}
+
+#btn:hover a {
+    background: #fff;
+    color: #000;
+}
+#btn3:hover a {
+    background: #fff;
+    color: #000;
+}
+
+
+#btn1:hover {
+    background-color: rgb(247, 103, 44);
+}
+
+#btn1>a:hover {
+    color: #fff;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.container>.commonTem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container>.commonTem>h1 {
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container>.commonTem>h1>span {
+    color: rgb(4, 204, 237);
+    margin-left: 10px;
+}
+
+.container>.commonTem>p {
+    width: 60%;
+    color: #000;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.owl-carousel>div {
+    padding: 20px;
+    /* border: 1px solid black; */
+}
+
+.item {
+    padding: 30px;
+    border: 2px solid rgb(221, 221, 221);
+    margin: 10px;
+
+}
+
+.item>img {
+    /* width: 100px; */
+    height: 320px;
+}
+
+.item>p {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(247, 103, 44);
+
+}
+
+.fa-circle {
+    color: rgb(247, 103, 44);
+    font-size: small;
+    padding: 0px 2px 3px 0px;
+}
+
+
+.fa-chevron-left,
+.fa-chevron-right {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    display: block !important;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 5px;
+    background-color: rgb(247, 103, 44);
+}
+
+.fa-chevron-left {
+    left: 20px;
+}
+
+.fa-chevron-right {
+    right: 20px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    transform: scale(2, 2);
+    color: rgb(221, 221, 221);
+}
+
+div>.owl-nav {
+    display: contents;
+
+}
+
+.banner1 {
+    background: linear-gradient(to right, rgb(3, 15, 12), rgb(1, 15, 12), rgba(3, 39, 50, 0.2)), 
+    url(../images/pexels-couleur-2317904.jpg);
+    background-size: contain;
+    padding: 20px;
+    height: 600px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.section1>.container>.banner1>.commonTem1 {
+    width: 50%;
+    position: relative;
+    top: 100px;
+    padding: 20px;
+    margin: 0px 0px 0px 50px;
+}
+
+
+.section1>.container>.banner1>.commonTem1>h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section1>.container>.banner1>.commonTem1>h1>span {
+    color: rgb(247, 103, 44);
+
+}
+
+.inner-header>h1{
+    font-weight: bold !important;
+    font-size: 30px !important;
+    color: #000;
+
+}
+
+.inner-header>h1>span{
+    color: rgb(247, 103, 44);
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+.section1>.container>.banner1>.commonTem1>p {
+    color: #fff;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 30px;
+
+}
+
+.textalign {
+    text-align: left;
+}
+
+.fa-fish,
+.fa-cat,
+.fa-dog,
+.fa-cow,
+.fa-kiwi-bird,
+.fa-otter,
+.fa-earlybirds,
+.fa-dove {
+    font-size: 80px;
+}
+
+.commonTem1>div {
+    width: 100%;
+}
+
+
+.main {
+    width: 100%;
+    display: flex;
+    background-size: contain;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    padding: 50px 0px;
+    margin: 20px 0px 0px 0px;
+
+}
+.sliderItem>div>a{
+    display: none;
+}
+.barContent>span>a{
+    display: none;
+}
+
+.child {
+    margin-top: 30px;
+    width: 50%;
+}
+
+/* CSS Waves */
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+    margin: 0;
+}
+
+.header>.flex>h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
+
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    color: white;
+}
+
+.inner-header {
+    height: 20vh;
+    width: 100%;
+
+}
+
+.flex {
+    /*Flexbox for containers*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-family: "robot";
+    }
+}
+
+/* cards */
+
+
+/* cards */
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+.card>.content-1{
+    text-align: justify;
+    margin: 10px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card>.content-1:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: scale(1.1);
+   
+}
+
+.card>.content-1>img{
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.card>.content-1>h5{
+    margin: 10px;
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.card>.content-1>p{
+    width: 250px;
+    margin: 10px;
+}
+
+.fa-facebook-square,.fa-twitter-square,.fa-instagram-square{
+    padding: 20px;
+    
+}
+.fa-facebook-square:hover,.fa-twitter-square:hover,.fa-instagram-square:hover{
+    transform: scale(1.1);
+}
